@@ -1,29 +1,30 @@
 import React from "react";
 import "./Header.css";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo2.png";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <img src={logo} alt="Restaurant Logo" />
+        <img src={logo} alt="Little Lemon Logo" />
         <h1>Little Lemon</h1>
       </div>
       <nav className="nav">
-        <ul>
+        {/* <ul>
           <li>
-            <a href="">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/menu.html">Menu</a>
+            <Link to="/menu">Menu</Link>
           </li>
           <li>
-            <a href="/reservations.html">Reservations</a>
+            <Link to="/reservation">Reservation</Link>
           </li>
           <li>
-            <a href="/contact.html">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
-        </ul>
+        </ul> */}
       </nav>
     </header>
   );
