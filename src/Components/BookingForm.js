@@ -7,6 +7,7 @@ import {
   Input,
   Select,
   useToast,
+  VStack,
 } from "@chakra-ui/react";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
@@ -16,8 +17,6 @@ function BookingForm({ availableTimes, dispatch }) {
   const toast = useToast();
 
   const handleSubmit = (values, { setSubmitting }) => {
-    console.log(values);
-    dispatch(values.time);
     setTimeout(() => {
       toast({
         title: "Reservation submitted!",
@@ -39,7 +38,7 @@ function BookingForm({ availableTimes, dispatch }) {
   });
 
   return (
-    <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden" p={4}>
+    <VStack w="1024px" p={32} alignItems="flex-start">
       <Heading>Reserve a table</Heading>
       <Formik
         initialValues={{
@@ -117,7 +116,7 @@ function BookingForm({ availableTimes, dispatch }) {
           </Form>
         )}
       </Formik>
-    </Box>
+    </VStack>
   );
 }
 

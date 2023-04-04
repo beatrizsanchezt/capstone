@@ -5,6 +5,7 @@ import { extendTheme, ChakraProvider } from "@chakra-ui/react";
 import Layout from "./Components/Layout";
 import HomePage from "./Components/HomePage";
 import BookingPage from "./Components/BookingPage";
+import { fetchAPI, submitAPI } from "./api.js";
 
 const colors = {
   brand: {
@@ -37,17 +38,25 @@ const router = (availableTimes, dispatch) =>
     },
   ]);
 
-const times = [];
+const initializeTimes = (date) => {
+  // const times = [];
 
-for (let i = 17; i <= 22; i++) {
-  times.push(`${i}:00`);
-}
+  // for (let i = 17; i <= 22; i++) {
+  //   times.push(`${i}:00`);
+  // }
+
+  // const url = `https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js/fetchAPI?date=${date}`;
+  return fetchAPI(date);
+};
 
 const updateTimes = (times, time) => {
   return times.filter((hour) => hour !== time);
 };
 function App() {
-  const [availableTimes, dispatch] = useReducer(updateTimes, times);
+  const [availableTimes, dispatch] = useReducer(
+    updateTimes,
+    initializeTimes(new Date())
+  );
 
   return (
     <ChakraProvider theme={theme}>

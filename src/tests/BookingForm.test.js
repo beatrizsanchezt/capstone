@@ -1,4 +1,4 @@
-import BookingForm from "../src/Components/BookingForm";
+import BookingForm from "../Components/BookingForm";
 import { render, fireEvent, waitFor, screen } from "@testing-library/react";
 
 const times = [];
