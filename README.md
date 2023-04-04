@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Little Lemon Reservation Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web app for reserving a table at a restaurant. It allows users to select a date, time, number of guests, and occasion for their reservation.
+Getting Started
 
-## Available Scripts
+To run this app locally, you need to have Node.js and npm installed on your machine.
 
-In the project directory, you can run:
+1. Clone the repository:
 
-### `npm start`
+   ```
+   git clone https://github.com/<your-username>/capstone.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Navigate to the project directory:
 
-### `npm test`
+   ```
+   cd capstone
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```
 
-### `npm run build`
+3. Install dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```
+   npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Start the app:
 
-### `npm run eject`
+   ```
+   npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Open the app in your browser by navigating to http://localhost:3000.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## How to Reserve a Table
 
-## Learn More
+1. Select a date for your reservation by clicking on the date input field and choosing a date from the calendar.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Select a time for your reservation from the dropdown list of available times.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Enter the number of guests in your party in the "Number of guests" input field. You can enter any number between 1 and 10.
 
-### Code Splitting
+4. Select the occasion for your reservation from the dropdown list of options.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Click the "Make your reservation" button to submit your reservation request.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+6. If the reservation is successfully submitted, you will see a success message displayed on the screen. If there is an error, you will see an error message instead.

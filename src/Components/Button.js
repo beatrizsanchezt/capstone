@@ -3,7 +3,7 @@ import "./Button.css"; // import the styles for the button component
 
 function Button(props) {
   return (
-    <button className="button" onClick={props.onClick}>
+    <button className="button" onClick={props.onClick} {...props}>
       {props.text}
     </button>
   );

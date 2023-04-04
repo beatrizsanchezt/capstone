@@ -11,7 +11,7 @@ function Header() {
         <h1>Little Lemon</h1>
       </div>
       <nav className="nav">
-        {/* <ul>
+        <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -24,7 +24,7 @@ function Header() {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
-        </ul> */}
+        </ul>
       </nav>
     </header>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import "./HomePage.css";
 import Button from "./Button";
 
-function Main() {
+function HomePage() {
   return (
     <main className="main">
       <div className="banner">
@@ -39,4 +39,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default HomePage;
